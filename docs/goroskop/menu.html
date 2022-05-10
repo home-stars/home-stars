@@ -11,6 +11,8 @@
             <center><h1>Home 🌟 Stars </h1></center>
         </header>
 
+        <div id="update date"></div>
+        
         <br><br><br>
         <center>
         <hr>
@@ -157,6 +159,7 @@
             document.getElementById(zz_all[i] + '-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js[zz_all[i]]['tomorrow'] + '<br><br><br>';
         }     
        
+        document.getElementById('update date').innerText = 'Last update: ' + String(new Date()).substring(0, 15) + ' 00:00 MSK';
         
     </script>
 
