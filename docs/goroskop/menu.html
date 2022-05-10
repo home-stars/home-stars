@@ -144,57 +144,20 @@
     </center>
 
     <script>
+        
+        /*Ну и что ты тут забыл?*/
+        
         js = JSON.parse(data)
+        
+        let zz_all = ["leo", "aries", "taurus", "gemini", "cancer", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
 
-        document.getElementById('leo-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['leo']['yesterday'] + '\n';
-        document.getElementById('leo-today').innerHTML = '<strong>Сегодня</strong><br>' + js['leo']['today'] + '\n';
-        document.getElementById('leo-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['leo']['tomorrow'] + '\n';
-
-        document.getElementById('aries-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['aries']['yesterday'] + '\n';
-        document.getElementById('aries-today').innerHTML = '<strong>Сегодня</strong><br>' + js['aries']['today'] + '\n';
-        document.getElementById('aries-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['aries']['tomorrow'] + '\n';
-
-        document.getElementById('taurus-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['taurus']['yesterday'] + '\n';
-        document.getElementById('taurus-today').innerHTML = '<strong>Сегодня</strong><br>' + js['taurus']['today'] + '\n';
-        document.getElementById('taurus-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['taurus']['tomorrow'] + '\n';
-
-        document.getElementById('gemini-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['gemini']['yesterday'] + '\n';
-        document.getElementById('gemini-today').innerHTML = '<strong>Сегодня</strong><br>' + js['gemini']['today'] + '\n';
-        document.getElementById('gemini-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['gemini']['tomorrow'] + '\n';
-
-        document.getElementById('cancer-yesterday').innerHTML = '<strong>Вчера</strong><br>' +  js['cancer']['yesterday'] + '\n';
-        document.getElementById('cancer-today').innerHTML = '<strong>Сегодня</strong><br>' + js['cancer']['today'] + '\n';
-        document.getElementById('cancer-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['cancer']['tomorrow'] + '\n';
-
-        document.getElementById('virgo-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['virgo']['yesterday'] + '\n';
-        document.getElementById('virgo-today').innerHTML = '<strong>Сегодня</strong><br>' + js['virgo']['today'] + '\n';
-        document.getElementById('virgo-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['virgo']['tomorrow'] + '\n';
-
-        document.getElementById('libra-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['libra']['yesterday'] + '\n';
-        document.getElementById('libra-today').innerHTML = '<strong>Сегодня</strong><br>' + js['libra']['today'] + '\n';
-        document.getElementById('libra-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['libra']['tomorrow'] + '\n';
-
-        document.getElementById('scorpio-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['scorpio']['yesterday'] + '\n';
-        document.getElementById('scorpio-today').innerHTML = '<strong>Сегодня</strong><br>' + js['scorpio']['today'] + '\n';
-        document.getElementById('scorpio-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['scorpio']['tomorrow'] + '\n';
-
-        document.getElementById('sagittarius-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['sagittarius']['yesterday'] + '\n';
-        document.getElementById('sagittarius-today').innerHTML ='<strong>Сегодня</strong><br>' + js['sagittarius']['today'] + '\n';
-        document.getElementById('sagittarius-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['sagittarius']['tomorrow'] + '\n';
-
-        document.getElementById('capricorn-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['capricorn']['yesterday'] + '\n';
-        document.getElementById('capricorn-today').innerHTML = '<strong>Сегодня</strong><br>' + js['capricorn']['today'] + '\n';
-        document.getElementById('capricorn-tomorrow').innerHTML = '<strong>Завтра</strong><br>' +  js['capricorn']['tomorrow'] + '\n';
-
-        document.getElementById('aquarius-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['aquarius']['yesterday'] + '\n';
-        document.getElementById('aquarius-today').innerHTML = '<strong>Сегодня</strong><br>' + js['aquarius']['today'] + '\n';
-        document.getElementById('aquarius-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['aquarius']['tomorrow'] + '\n';
-
-        document.getElementById('pisces-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js['pisces']['yesterday'] + '\n';
-        document.getElementById('pisces-today').innerHTML = '<strong>Сегодня</strong><br>' + js['pisces']['today'] + '\n';
-        document.getElementById('pisces-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js['pisces']['tomorrow'] + '\n';
-
-
+        for(var i=0; i<zz_all.length; i++){
+            document.getElementById(zz_all[i] + '-yesterday').innerHTML = '<strong>Вчера</strong><br>' + js[zz_all[i]]['yesterday'] + '\n';
+            document.getElementById(zz_all[i] + '-today').innerHTML = '<strong>Сегодня</strong><br>' + js[zz_all[i]]['today'] + '\n';
+            document.getElementById(zz_all[i] + '-tomorrow').innerHTML = '<strong>Завтра</strong><br>' + js[zz_all[i]]['tomorrow'] + '<br><br><br>';
+        }     
+       
+        
     </script>
 
     </body>
