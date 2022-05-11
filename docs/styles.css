@@ -1,11 +1,10 @@
-
 @font-face {
     font-family: veles;
     src: url('veles.otf');
 }
 
 body{
-    background-color: wheat;
+    background-color: #31353e;
 }
 
 header {
@@ -13,20 +12,20 @@ header {
     height: 100px;
     background-color:antiquewhite;
     color:rgb(0, 174, 255);
-    font-size: 56px;
+    font-size: 52px;
     font-family: veles;
 }    
 
 .zz_name {
     font-size: 38px;
     font-family: 'Courier New', Courier, monospace;
-    color: darkslategray;
+    color: green;
 }
 
 .stdtext {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
-    color: darkslategrey;
+    color: lightblue;
 }
 
 
@@ -38,7 +37,8 @@ header {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 22px;
+    font-size: 32px;
+    font-family: Arial;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
